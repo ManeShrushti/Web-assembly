@@ -9,7 +9,6 @@ import { HumanizeTimePipe } from "./humanize-time-pipe";
 import { WasmFibonacciComponent } from "./fibonacci/fibonacci.component";
 import { WasmConsoleLoggerComponent } from "./console-logger/console-logger.component";
 import { WasmTextToAsciiComponent } from "./text-to-ascii/text-to-ascii.component";
-import { WasmSystemInfoComponent } from "./system-info/system-info.component";
 import { WasmBmpToAsciiComponent } from "./bmp-to-ascii/bmp-to-ascii.component";
 import { Wasm3dCubeComponent } from "./3d-cube/3d-cube.component";
 import { WasmProofOfWorkComponent } from "./proof-of-work/proof-of-work.component";
@@ -21,7 +20,6 @@ import { WasmPersonRecordComponent } from "./person-record/person-record.compone
     WasmFibonacciComponent,
     WasmConsoleLoggerComponent,
     WasmTextToAsciiComponent,
-    WasmSystemInfoComponent,
     WasmBmpToAsciiComponent,
     Wasm3dCubeComponent,
     WasmProofOfWorkComponent,

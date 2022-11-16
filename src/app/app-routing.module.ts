@@ -9,7 +9,6 @@ import { WasmBmpToAsciiComponent } from "./wasm/bmp-to-ascii/bmp-to-ascii.compon
 import { Wasm3dCubeComponent } from "./wasm/3d-cube/3d-cube.component";
 import { WasmProofOfWorkComponent } from "./wasm/proof-of-work/proof-of-work.component";
 import { WasmPersonRecordComponent } from "./wasm/person-record/person-record.component";
-import { WasmSystemInfoComponent } from "./wasm/system-info/system-info.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -44,15 +43,10 @@ const routes: Routes = [
     component: WasmPersonRecordComponent,
     data: { demo: true, name: "Person Record" },
   },
-  {
-    path: "system-info",
-    component: WasmSystemInfoComponent,
-    data: { demo: true, name: "System Information" },
-  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: "legacy" })],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

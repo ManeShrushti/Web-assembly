@@ -15,13 +15,7 @@ interface EmscriptenModule {
   print?(what: string): void;
   printErr?(what: string): void;
   locateFile?(file: string): string;
-  ccall?(
-    funcName: string,
-    returnType?: string,
-    argumentTypes?: string[],
-    arguments?: any[],
-    options?: CcallOptions
-  ): any;
+  ccall?(funcName: string, returnType: string, argumentTypes: string[], arguments: any[], options?: CcallOptions): any;
   preRun?: Function[];
   postRun?: Function[];
   canvas?: HTMLCanvasElement;
