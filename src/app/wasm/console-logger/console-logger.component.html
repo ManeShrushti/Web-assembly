@@ -1,10 +1,46 @@
 <section>
-  <div class="container">
-    <h1>Console logger</h1>
-    <p>
-      Just click on the button
-    </p>
-    <div><button (click)="getSquare()"></button></div>
-    <h2 *ngIf="result">{{result}}</h2>
+  <div class="main">
+    <h1>TIC TAC TOE</h1>
+
+    <button *ngIf="!isStarted" class="but" (click)="reset()">Start</button>
+
+    <div *ngIf="isStarted">
+      <!-- Game Instructions -->
+      <p class="ins">
+        Game starts by just Tap on box<br /><br />First Player starts as <b>1</b><br />And<br />Second Player as
+        <b>0</b>
+      </p>
+
+      <br /><br />
+      <!-- 3*3 grclass of Boxes -->
+      <div>
+        <span type="button" (click)="move('0')" class="b">{{ arr[0] }}</span>
+
+        <span type="button" (click)="move('1')" class="b">{{ arr[1] }}</span>
+
+        <span type="button" (click)="move('2')" class="b">{{ arr[2] }}</span>
+        <br /><br />
+      </div>
+      <div>
+        <span type="button" (click)="move('3')" class="b">{{ arr[3] }}</span>
+
+        <span type="button" (click)="move('4')" class="b">{{ arr[4] }}</span>
+
+        <span type="button" (click)="move('5')" class="b">{{ arr[5] }}</span>
+        <br /><br />
+      </div>
+      <div>
+        <span type="button" (click)="move('6')" class="b">{{ arr[6] }}</span>
+
+        <span type="button" (click)="move('7')" class="b">{{ arr[7] }}</span>
+
+        <span type="button" (click)="move('8')" class="b">{{ arr[8] }}</span>
+      </div>
+
+      <!-- Grclass end here  -->
+      <br /><br /><br />
+      <!-- Button to reset game -->
+      <button class="but" (click)="reset()">RESET</button>
+    </div>
   </div>
 </section>

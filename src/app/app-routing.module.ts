@@ -20,7 +20,7 @@ const routes: Routes = [
   {
     path: "console-logger",
     component: WasmConsoleLoggerComponent,
-    data: { demo: true, name: "Console logger" },
+    data: { demo: true, name: "Tic Tac Toe" },
   },
   {
     path: "text-to-ascii",
@@ -46,7 +46,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: "legacy" })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

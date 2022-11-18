@@ -1,0 +1,38 @@
+h1 {
+  color: orangered;
+  font-size: 45px;
+}
+
+
+.b {
+  width: 80px;
+  height: 50px;
+  border: 1px solid gray;
+  font-size: 30px;
+  text-align: center;
+}
+
+.but {
+  box-sizing: border-box;
+  width: 90px;
+  height: 40px;
+  border: 1px solid dodgerblue;
+  margin: auto;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 20px;
+}
+
+
+
+
+.main {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+
+.ins {    
+  color: dodgerblue;
+  font-size: 17px;
+}
