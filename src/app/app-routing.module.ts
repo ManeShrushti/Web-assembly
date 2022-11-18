@@ -3,7 +3,7 @@ import { RouterModule, Routes } from "@angular/router";
 
 import { HomeComponent } from "./home/home.component";
 import { WasmFibonacciComponent } from "./wasm/fibonacci/fibonacci.component";
-import { WasmConsoleLoggerComponent } from "./wasm/console-logger/console-logger.component";
+import { WasmTicTacToeComponent } from "./wasm/tic-tac-toe/tic-tac-toe.component";
 import { WasmTextToAsciiComponent } from "./wasm/text-to-ascii/text-to-ascii.component";
 import { WasmBmpToAsciiComponent } from "./wasm/bmp-to-ascii/bmp-to-ascii.component";
 import { Wasm3dCubeComponent } from "./wasm/3d-cube/3d-cube.component";
@@ -18,8 +18,8 @@ const routes: Routes = [
     data: { demo: true, name: "Fibonacci battlefield" },
   },
   {
-    path: "console-logger",
-    component: WasmConsoleLoggerComponent,
+    path: "tic-tac-toe",
+    component: WasmTicTacToeComponent,
     data: { demo: true, name: "Tic Tac Toe" },
   },
   {

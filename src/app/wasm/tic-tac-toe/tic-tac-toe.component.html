@@ -1,0 +1,35 @@
+<section>
+  <div class="main">
+    <h1>TIC TAC TOE</h1>
+
+    <button *ngIf="!isStarted" class="but" (click)="reset()">Start</button>
+
+    <div *ngIf="isStarted">
+      <!-- Game Instructions -->
+      <p class="ins">
+        Game starts by clicking on any of the box<br /><br />First Player starts as <b>X</b><br />And<br />Second Player as
+        <b>O</b>
+      </p>
+      <div *ngIf="showResult">
+        <h2>{{resultMessage}}</h2>
+      </div>
+      <br /><br />
+      <!-- 3*3 grclass of Boxes -->
+      <div class="board">
+        <div *ngFor="let blockDiv of blockMatrix;let blockIdx = index">
+          <div *ngFor="let block of blockDiv">
+            <button (click)="move(block.id,blockIdx)" class="b" [disabled]="block.disabled">
+              <span *ngIf="block.value">{{block.value}}</span>
+            </button> 
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Grclass end here  -->
+      <br /><br /><br />
+      <!-- Button to reset game -->
+      <button class="but" (click)="reset()">RESET</button>
+    </div>
+  </div>
+</section>

@@ -7,7 +7,7 @@ import { LaddaModule } from "angular2-ladda";
 import { HumanizeTimePipe } from "./humanize-time-pipe";
 
 import { WasmFibonacciComponent } from "./fibonacci/fibonacci.component";
-import { WasmConsoleLoggerComponent } from "./console-logger/console-logger.component";
+import { WasmTicTacToeComponent } from "./tic-tac-toe/tic-tac-toe.component";
 import { WasmTextToAsciiComponent } from "./text-to-ascii/text-to-ascii.component";
 import { WasmBmpToAsciiComponent } from "./bmp-to-ascii/bmp-to-ascii.component";
 import { Wasm3dCubeComponent } from "./3d-cube/3d-cube.component";
@@ -18,7 +18,7 @@ import { WasmPersonRecordComponent } from "./person-record/person-record.compone
   declarations: [
     HumanizeTimePipe,
     WasmFibonacciComponent,
-    WasmConsoleLoggerComponent,
+    WasmTicTacToeComponent,
     WasmTextToAsciiComponent,
     WasmBmpToAsciiComponent,
     Wasm3dCubeComponent,
