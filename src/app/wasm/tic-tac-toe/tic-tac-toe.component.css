@@ -14,7 +14,7 @@ h1 {
   margin-bottom: 5px;
 }
 
-.b-disabled{
+.b:disabled{
   cursor: not-allowed;
 }
 
